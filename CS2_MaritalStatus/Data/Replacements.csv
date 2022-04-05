@@ -1,0 +1,128 @@
+Entry,Value
+Very dissatisfied,0
+Somewhat dissatisfied,1
+Somewhat satisfied,2
+Very satisfied,3
+Not at all likely,0
+Not too likely,1
+Somewhat likely,2
+Very likely,3
+Not important,0
+"Important, but not essential",2
+Essential,3
+Not at all important,0
+Not too important,1
+Somewhat important,2
+Very important,3
+Never,0
+Rarely,1
+Sometimes,2
+Often,3
+Strongly oppose,0
+Somewhat oppose,1
+Somewhat favor,2
+Strongly favor,3
+Not at all serious,0
+Not too serious,1
+Somewhat serious,2
+Very serious,3
+Not too well,1
+Not at all well,0
+Fairly well,2
+Very well,3
+Not at all,0
+Not much,1
+A fair amount,2
+A great deal,3
+A lot,3
+No(?:ne|t) at all,0
+Only a little,1
+Some,2
+Full-time,2
+Not employed,0
+Part-time,1
+Less than 3 months,0
+3 months to less than 6 months,3
+6 months to less than 1 year,6
+Less than one year,0
+1 year to less than 3 years,12
+3 years to less than 5 years,36
+5 years or more,60
+5 years to less than 10 years,60
+10 years to less than 20 years,120
+20 years or more,240
+A lot of pressure,2
+No pressure at all,0
+Not too much pressure,1
+Some pressure,2
+Accesses.+,1
+Does not access.+,0
+College graduate\+,2
+Don't know/Refused,
+H.S. graduate or less,0
+Some College,1
+Associate's degree,3
+College graduate/some post grad,4
+High school graduate,1
+Less than high school,0
+Postgraduate,5
+"Some college, no degree",2
+Both about equally,Equal
+You do more than your spouse/partner,Me
+Your spouse/partner does more than you,SO
+No child.+,NoChild
+Not working for pay at all,Unemployed
+Working full-time for pay,FullTime
+Working part-time for pay,PartTime
+18-29,18to29
+30-49,30to49
+50-64,50to64
+65\+,65Up
+DK/REF,
+"Yes, more than one",MoreThanOne
+"Yes, one",One
+"No, never acceptable",Never
+"Yes, even if they don’t plan to get married",Always
+"Yes, but only if they plan to get married ",IfGettingMArried
+Easier to advance in your job or career,Easier
+Harder to advance in your job or career,Harder
+Would not make a difference,NoDifference
+Hasn’t made a difference,NoDifference
+Makes it easier,Easier
+Makes it harder,Harder
+Are not sure if you want to get married( again)?,Unsure
+Don’t want.+,NoWant
+Want to.+,Want
+Would like to be in a romantic relationship,Want
+Better chance of having a successful marriage,Better
+Worse chance of having a successful marriage,Worse
+Letting kids live with them,LetLIve
+Providing child care for grandchildren,ChildCare
+Providing financial help,FinancialAid
+Solving( their)? kids' problems/Overprotective/Not letting them be responsible,Agency
+Other reason,Other
+About the right amount,RightAmount
+Too little.+,TooLittle
+Too much.+,TooMuch
+Society is better off.+,True
+Society is just as well off.+,False
+A married person has it easier,Easier
+An unmarried person living with a partner has it easier,Harder
+Doesn’t make much difference,NoDifference
+Major reason,2
+Minor reason,1
+Not a reason,0
+Couples who are married.+,MarriedBetter
+Couples who are living together.+,CohabSame
+"Less than \$10,000",0 
+"\$10,000 to less than \$20,000",10000  
+"\$20,000 to less than \$30,000",20000  
+"\$30,000 to less than \$40,000",30000   
+"\$40,000 to less than \$50,000",40000  
+"\$50,000 to less than \$75,000",50000
+"\$75,000 to less than \$100,000",75000
+"\$100,000 to less than \$150,000",100000
+"\$150,000 or more",150000
+"Yes,.+",Yes
+Refused,
+No answer,

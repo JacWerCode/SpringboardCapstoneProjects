@@ -1,0 +1,158 @@
+Key,Value,Dependencies
+SATLIFEa,		SATLIFE_Family,				BASE
+SATLIFEb,		SATLIFE_Social,					BASE
+SATLIFEc,		SATLIFE_Financial,				BASE
+SATLIFEd,		SATLIFE_Job,					BASE
+FAMSURV1,		Employment,						BASE
+FAMSURV2Ma,		ManFulfillmentMarriage,			BASE
+FAMSURV2Mb,		ManFulfillmentCommitment,		BASE
+FAMSURV2Mc,		ManFulfillmentChildren,			BASE
+FAMSURV2Md,		ManFulfillmentJobEnjoyment,		BASE
+FAMSURV2Me,		ManFulfillmentJobMoney,			BASE
+FAMSURV2Wa,		WomanFulfillmentMarriage,		BASE
+FAMSURV2Wb,		WomanFulfillmentCommitment,		BASE
+FAMSURV2Wc,		WomanFulfillmentChildren,		BASE
+FAMSURV2Wd,		WomanFulfillmentJobEnjoyment,	BASE
+FAMSURV2We,		WomanFulfillmentJobMoney,		BASE
+FAMSURV3,		CohabOK,						FORM=1
+FAMSURV4,		SocietyBetterMarried,			FORM=2
+FAMSURV5a,		MarriageBetterFinancialSecurity,BASE
+FAMSURV5b,		MarriageBetterSexLife,			BASE
+FAMSURV5c,		MarriageBetterSocialStatus,		BASE
+FAMSURV5d,		MarriageBetterHappiness,		BASE
+FAMSURV6,		CohabRights,					BASE
+FAMSURV7,		CohabImprovesMarriage,				BASE
+FAMSURV8,		ChildRearing,						BASE
+FAMSURV9a,		FinancialStabilityBeforeMarriage,	FORM=1
+FAMSURV9b,		SteadyJobBeforeMarriage,			FORM=1
+FAMSURV9c,		HouseBeforeMarriage,				FORM=1
+FAMSURV9e,		CompleteCommitmentBeforeMarriage,	FORM=1
+FAMSURV10a,		FinancialStabilityBeforeCohabitation,	FORM=2
+FAMSURV10b,		SteadyJobBeforeCohabitation,			FORM=2
+FAMSURV10c,		HouseBeforeCohabitation,				FORM=2
+FAMSURV10e,		CompleteCommitmentBeforeCohabitation,	FORM=2
+FAMSURV11W,		IdealSituationWomanWithChildren,		BASE
+FAMSURV11M,		IdealSituationManWithChildren,			BASE
+FAMSURV12,		ParentsForYoungAdults18_29,				BASE
+FAMSURV12OE_M1,	TooMuch,								FAMSURV12=1
+FAMSURV12OE_M2,	TooLittle,								FAMSURV12=1
+FAMSURV12OE_M3,	AboutRight,								FAMSURV12=1
+MOTHER,			Mother_Living,							BASE
+FATHER,			Father_Living,							BASE
+SIB,			Siblings,								BASE
+MARITALMOD,		MaritalStatus,							BASE
+REMARR,			MarriedMoreThanOnce,					MARITALMOD=1-4
+ENG,			Engaged,								MARITALMOD=2-5 OR REFUSED
+LWPT,			LivesWithSO,							MARITALMOD=2-5 OR REFUSED
+MAR2,			CommittedRelationship,					(MARITALMOD=2-5 OR REFUSED) AND (LWPT=2 OR REFUSED) AND (ENG=2 ORREFUSED) 
+FAMSURV16,		RelationshipGoals,						CommittedRelationship=0
+FAMSURV17,		ClosestAdult,							BASE
+ADKIDS,			AdultChild18_29,						BASE
+PAR1,			ForYourChilden,							ASK PARENTS AGES 30+ WITH ADULT CHILDREN AGES 18 TO 29
+PAR2,			YourParentsForYou,						ASK IF AGES 18 TO 29 AND HAS AT LEAST ONE LIVING PARENT
+ROMRELDUR,		CurrRelationshipLength,					(MAR2=1 OR ((LWPT=2 OR REFUSED) AND ENG=1)):
+MARRDUR,		MarriageLength						,	MARITALMOD=1
+COHABDUR,		CohabitationLength					,	LWPT=1
+LWPSP,			CohabitatedWithSpouse				,	MARITALMOD=1
+FAMSURV18A,		CohabitationStepTowardsMarriage		,	LWPT=1
+FAMSURV18B,		EngagedBeforeCohabitation			,	LWPT=1
+ROMRELSER,		RelationshipSeriousness				,	((MAR2=1 OR LWPT=1) AND ENG=2 or refused)
+FAMSURV19,		RelationshipGoing					,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV20,		CohabitationStepTowardsMarriage2	,	LWPT=1
+FAMSURV21,		EngagedBeforeCohabitation2			,	(LWPT=1 AND ENG=1)
+FAMSURV22a,		MarriedForLove						,	MARITALMOD=1
+FAMSURV22b,		MarriedForCompanionship				,	MARITALMOD=1
+FAMSURV22c,		MarriedForPregnancy					,	MARITALMOD=1
+FAMSURV22d,		MarriedForChildren					,	MARITALMOD=1
+FAMSURV22e,		MarriedForFinancialReasons			,	MARITALMOD=1
+FAMSURV22f,		MarriedForConvenience				,	MARITALMOD=1
+FAMSURV22g,		MarriedForFormalCommitment			,	MARITALMOD=1
+FAMSURV23a,		CohabitatedForLove					,	LWPT=1
+FAMSURV23b,		CohabitatedForCompanionship			,	LWPT=1
+FAMSURV23c,		CohabitatedForPregnancy				,	LWPT=1
+FAMSURV23d,		CohabitatedForChildren				,	LWPT=1
+FAMSURV23e,		CohabitatedForFinancialReasons		,	LWPT=1
+FAMSURV23f,		CohabitatedForConvenience			,	LWPT=1
+FAMSURV23g,		CohabitatedForFormalCommitment		,	LWPT=1
+MARRYPREF1,		FutureMarriageForNeverMarried		,	(MARITALMOD=5 AND (ENG=2 or refused)
+MARRYPREF2,		FutureMarriageForDivorcedOrSeparated,	(MARITALMOD=2 or 4) AND (ENG=2 or refused)
+FAMSURV24A,		WhyWontYouMarry						,	(MARRYPREF1=2)
+FAMSURV24B,		WhyWontYouMarryForDivorced			,	(MARRYPREF2=2)
+FAMSURV25,		LikelinessToMarryPartner			,	LWPT=1 AND ((MARRYPREF1=1 or 3) OR (MARRYPREF2=1 or 3))
+FAMSURV26a,		PressureToMarryFromPartner			,	(LWPT=1 AND ENG=2)
+FAMSURV26b,		PressureToMarryFromFamily			,	(LWPT=1 AND ENG=2)
+FAMSURV26c,		PressureToMarryFromFriends			,	(LWPT=1 AND ENG=2)
+FAMSURV26d,		PressureToMarryFromSociety			,	(LWPT=1 AND ENG=2)
+FAMSURV27a,		PressureToMarryFromPartnerAfterMovingIn,	(FAMSURV21=2)
+FAMSURV27b,		PressureToMarryFromFamilyAfterMovingIn,	(FAMSURV21=2)
+FAMSURV27c,		PressureToMarryFromFriendsAfterMovingIn,	(FAMSURV21=2)
+FAMSURV27d,		PressureToMarryFromSocietyAfterMovingIn,	(FAMSURV21=2)
+FAMSURV28,		FamilyConcidersPartnerFamily		,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV29,		PartnerTalksAboutMarriage			,	(LWPT=1 AND ENG=2):
+FAMSURV30a,		PartnerNotReadyFinancially			,	LWPT=1 AND ((MARRYPREF1=1 or 3) OR (MARRYPREF2=1 or 3))
+FAMSURV30b,		UserNotReadyFinancially				,	LWPT=1 AND ((MARRYPREF1=1 or 3) OR (MARRYPREF2=1 or 3))
+FAMSURV30c,		PartnerNotReadyForCommitment		,	LWPT=1 AND ((MARRYPREF1=1 or 3) OR (MARRYPREF2=1 or 3))
+FAMSURV30d,		UserNotReadyForCommitment			,	LWPT=1 AND ((MARRYPREF1=1 or 3) OR (MARRYPREF2=1 or 3))
+FAMSURV30e,		UserNotReadyJob						,	LWPT=1 AND ((MARRYPREF1=1 or 3) OR (MARRYPREF2=1 or 3))
+FAMSURV30f,		UserUnsureOfPartner					,	LWPT=1 AND ((MARRYPREF1=1 or 3) OR (MARRYPREF2=1 or 3))
+E5MOD,			PartnerEmployment					,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV32a,		SatisfactionOfChores				,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV32b,		SatisfactionOfSexLife				,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV32c,		SatisfactionOfCommunication			,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV32d,		SatisfactionOfPartnerWorkLifeBalance,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV32e,		SatisfactionOfPartnersParenting		,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV33a,		TrustPartnerTruth					,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV33b,		TrustPartnerFaithful				,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV33c,		TrustPartnerMoney					,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV33d,		TrustPartnerAction					,	(MARITALMOD=1 OR LWPT=1)
+FAMSURV34A,		WorkingParentAffectsJob				,	EMPLOYED AND HAS CHILDREN <18 IN HH 
+FAMSURV34B,		WorkingParentAffectsParenting		,	EMPLOYED AND HAS CHILDREN <18 IN HH 
+FAMSURV35a,		ReducedHoursForParenting			,	EMPLOYED AND HAS CHILDREN <18 IN HH 
+FAMSURV35b,		CouldntGive100AtWork				,	EMPLOYED AND HAS CHILDREN <18 IN HH 
+FAMSURV35c,		TurnedDownPromotion					,	EMPLOYED AND HAS CHILDREN <18 IN HH 
+FAMSURV36a,		ChildrenCausedPromotionPassover		,	EMPLOYED AND HAS CHILDREN <18 IN HH 
+FAMSURV36b,		ChildrenCausedAssignmentPassover	,	EMPLOYED AND HAS CHILDREN <18 IN HH 
+FAMSURV36c,		ChildrenCausedUncommittedTreatment,		EMPLOYED AND HAS CHILDREN <18 IN HH 
+HAVEKIDS1,		WantKids					,			(SEX=2 AND AGE < 49) OR (SEX=1 AND AGE <59)
+FAMSURV37,		ChildrenHelpAdvanceCareer,				ASK IF UNDER AGE 40 AND DOES NOT HAVE CHILDREN 
+FAMSURV38a,		WhoDoesMoreChores		,				(MARITALMOD=1 OR LWPT=1)
+FAMSURV38b,		WhoDoesMoreFinances		,				(MARITALMOD=1 OR LWPT=1)
+FAMSURV38c,		WhoDoesMoreWithChildren	,				(MARITALMOD=1 OR LWPT=1)
+FAMSURV39,		ParentalEmotioanlSupport,				ASK IF AGES 18 TO 29 AND HAS AT LEAST ONE LIVING PARENT
+FAMSURV40,		FinacialHelpFromParentsPast12Months,	ASK IF AGES 18 TO 29 AND HAS AT LEAST ONE LIVING PARENT
+FAMSURV41,		Received,								FAMSURV40=1-3
+FAMSURV42a,		HelpFromParentsForEducation,			FAMSURV40=1-3
+FAMSURV42b,		HelpFromParentsForMedical,				FAMSURV40=1-3
+FAMSURV42c,		HelpFromParentsForHousing,				FAMSURV40=1-3
+FAMSURV42d,		HelpFromParentsForHousehold,			FAMSURV40=1-3
+FAMSURV43,		ChildEmotionalSupport,					ASK PARENTS AGES 30+ WITH ADULT CHILDREN AGES 18 TO 29 
+FAMSURV44,		FinancialHelpToChildren18_29,			ASK PARENTS AGES 30+ WITH ADULT CHILDREN AGES 18 TO 29 
+FAMSURV45,		Provided,								FAMSURV44=1-3
+FAMSURV46a,		HelpToChildrenForEducation,				FAMSURV44=1-3
+FAMSURV46b,		HelpToChildrenForMedical,				FAMSURV44=1-3
+FAMSURV46c,		HelpToChildrenForHousing,				FAMSURV44=1-3
+FAMSURV46d,		HelpToChildrenForHousehold,				FAMSURV44=1-3
+SPOUSESEX,		SpouseSex,								MARITALMOD=1
+ORIENTATIONMOD,	SexualOrientation,						BASE
+CREGION,		Region,									BASE
+EDUCCAT,		Education,								BASE
+EDUCCAT2,		Degree,									BASE
+RACECMB,		Race,									BASE
+RACETHN,		Ethnicity,								BASE
+HISP,			HISP,					BASE
+Race,			Race,					BASE
+NATIVITY,		NATIVITY,				BASE
+CITIZEN,		CITIZEN,				BASE
+BORN,			BORN,					BASE
+ATTEND,			ATTEND,					BASE
+PARTY_FINAL,	PARTY_FINAL,			BASE
+PARTYLN_FINAL,	PARTYLN_FINAL,			BASE
+INCOME,			INCOME,					BASE
+INCOME_RECODE,	INCOME_RECODE,			BASE
+REG,			REG,					BASE
+IDEO,			IDEO,					BASE
+ACSWEB,			ACSWEB,					BASE
+VOLSUM,			VOLSUM,					BASE
+SEX,			SEX,					BASE
+FORM,			FORM,					BASE
+AGECAT,			AGECAT,					BASE
